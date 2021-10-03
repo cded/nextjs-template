@@ -1,3 +1,38 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": [
+    "next",
+    "next/core-web-vitals",
+    "eslint-config-airbnb",
+    "eslint-config-prettier"
+  ],
+  "env": {
+    "browser": true,
+    "es2020": true,
+    "node": true,
+    "jest": true
+  },
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "react/prop-types": 0,
+    "react/jsx-indent": [2, 2],
+    "react/jsx-indent-props": [2, 2],
+    "react/jsx-filename-extension": 0,
+    "react/react-in-jsx-scope": 0,
+    "react/jsx-no-literals": 0,
+    "react/jsx-one-expression-per-line": 0,
+    "react/jsx-max-depth": 0,
+    "react/jsx-newline": 0,
+    "react/jsx-props-no-spreading": 0
+  },
+  "ignorePatterns": ["node_modules/", ".next/"],
+  "settings": {
+    "import/resolver": {
+      "alias": [["src/components", "./components"]]
+    }
+  }
 }
