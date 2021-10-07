@@ -1,10 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Footer = () => {
-  console.log('footer');
-  return <Wrapper>{/* <Text>© 2021</Text> */}</Wrapper>;
-};
+const Footer = () => <Wrapper>{/* <Text>© 2021</Text> */}</Wrapper>;
 
 export default Footer;
 

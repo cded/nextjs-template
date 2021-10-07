@@ -1,15 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const TextInput = ({ label, placeholder }) => {
-  console.log(label);
-  return (
-    <Wrapper>
-      <InputLabel>{label}</InputLabel>
-      <Input placeholder={placeholder} />
-    </Wrapper>
-  );
-};
+const TextInput = ({ label, placeholder, setInput }) => (
+  <Wrapper>
+    <InputLabel>{label}</InputLabel>
+    <Input
+      autocomplete
+      placeholder={placeholder}
+      onChange={(e) => setInput(e.target.value)}
+    />
+  </Wrapper>
+);
 
 export default TextInput;
 

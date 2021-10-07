@@ -1,16 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Navbar = () => {
-  console.log('test');
-  return (
-    <Wrapper>
-      <Header>
-        <Title>Next Template</Title>
-      </Header>
-    </Wrapper>
-  );
-};
+const Navbar = () => (
+  <Wrapper>
+    <Header>
+      <Title>Next Template</Title>
+    </Header>
+  </Wrapper>
+);
 
 export default Navbar;
 
